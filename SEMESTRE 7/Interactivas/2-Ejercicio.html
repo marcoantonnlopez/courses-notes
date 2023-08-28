@@ -13,7 +13,7 @@
 
 </head>
 
-<body>
+<body class="main" id="hola :)">
     <header>
         <nav class="navbar navbar-expand-sm navbar-light bg-light">
             <div class="container">
@@ -142,6 +142,28 @@
         height: 80vh;
     }
 </style>
+
+<!-- * JQuery -->
+<!--Ejemplo en consola del devtools web: $('.navbar').css('backgound-color', 'black') -->
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.navbar').css('background-color', 'black');
+    });
+
+    $('.main').css ('height', '80vh');
+    $('.main').css ('background-color', 'blue');
+    $('.main').css ('color', 'white');
+    $('.main').css ('font-size', '2rem');
+    $('.main').css ('text-align', 'center');
+
+    $('.main').on('click', function(){
+        var id = $('.main').attr('id');
+        alert(id);
+    });
+
+</script>
 
 
 
